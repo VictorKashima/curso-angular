@@ -1,0 +1,25 @@
+<h2>GitHub</h2>
+<p> {{ gitHub }} </p>
+
+<h3>Tecnologias que pretendo masterizar</h3>
+<ul>
+    <li *ngFor="let technology of technologies">
+        {{ technology }}
+    </li>
+</ul>
+
+<section>
+    <h2>Interpolação</h2>
+    <p>Isso é uma Interpolação? {{ interpolationValidation }}</p>
+    <p>Isso é um Property Binding? {{ !interpolationValidation }}</p>
+</section>
+
+<section>
+    <h2>Property Binding</h2>
+    <p>Isso é uma Interpolação?</p><p [textContent]="!propertyValidation"></p>
+
+    <p>Isso é um Property Binding?</p>
+    <p [textContent]="propertyValidation"></p>
+    <p [attr.colspan]="gitHub"></p>
+
+</section>
