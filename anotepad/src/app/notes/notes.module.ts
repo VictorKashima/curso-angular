@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { NotesComponent } from './notes.component';
 import { NoteTitleComponent } from './note-title/note-title.component';
+import { ClassBindingComponent } from './class-binding/class-binding.component';
 
 
 @NgModule({
   declarations: [
     NotesComponent,
-    NoteTitleComponent
+    NoteTitleComponent,
+    ClassBindingComponent
   ],
   imports: [
     CommonModule
